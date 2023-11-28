@@ -171,6 +171,8 @@ def vigenere_cipher(message="I am an ITMGT Student", key="ITE"):
     # Stay within the function. Only use the parameters as input. The function should return your answer.
     message = message.upper()
     key = key.upper()
+    if len(key)>len(message):
+        return false
     if not key.isalpha():
         print("Invalid. Please do NOT use any spaces or unique characters in your key")
         return message
